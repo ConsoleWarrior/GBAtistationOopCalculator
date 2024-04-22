@@ -1,2 +1,3 @@
 # GBAtistationOopCalculator
-Для запуска: GBAtistationOopCalculator/bin/Debug/net8.0/GBAtistationOopCalculator.exe
+Для запуска использовать Visual Studio
+GBAtistationOopCalculator/bin/Debug/net8.0/GBAtistationOopCalculator.exe
