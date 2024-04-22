@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GBAtistationOopCalculator.services
 {
-	internal class Logger
+	internal class Logger : ILogger
 	{
 		private StringBuilder builder = new StringBuilder();
 		public void UpdateLog(string str)

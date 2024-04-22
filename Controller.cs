@@ -9,8 +9,9 @@ namespace GBAtistationOopCalculator
 {
 	internal class Controller
 	{
-		CalculatorService calculator = new CalculatorService();
-		Logger story = new Logger();
+		ICalculatorService calculator = new CalculatorService();
+		ILogger story = new Logger();
+
 		public void WorkWithUSer()
 		{
 			string str; double result;
@@ -28,7 +29,7 @@ namespace GBAtistationOopCalculator
 				else story.UpdateLog(str);
 				if (calculator.TryCalculate(str, out result))
 				{
-					Console.Write($"= {result}");
+					Console.WriteLine($"= {result}");
 					story.UpdateLog($"= {result}");
 				}
 			}
